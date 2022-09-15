@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LATIHAN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .wrapper {
+    overflow: hidden;
+  }
+  .wrapper > * {
+    float: left;
+    padding: 2em 2em;
+  }
+  div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  border: #000 1px solid;
+  background-color: #fff;
+  padding: 5px;
+  text-align: auto;
+  width: 90%;
+  color: black;
+}
+header ul li{
+  display: inline-block;
+  margin-right: 15px;
+  float: right;
+}
+
+nav {
+  border: #000 1px solid;
+  float: left;
+  width: 90%;
+  height: 250px;
+  background: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main{
+ border: #000 1px solid;
+  float: left;
+  padding: 10px;
+  width: 90%;
+  background-color: #fff;
+  height: 250px; 
+}
+
+aside {
+  border: #000 1px solid;
+  float: left;
+  padding: 2px;
+  width: 90%;
+  background-color: #fff;
+  height: 350px; 
+}
+
+article {
+  border: #000 1px solid;
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #fff;
+  height: 350px; 
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  border: #000 1px solid;
+  background-color: #fff;
+  width: 90%;
+  padding: 1px;
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 90%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Jhon Doe</h2>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+<section>
+  <nav>
+    <p style="text-align: justify;"><img src="latihan1/picture.jpg" style="float: right;" width="200" height="150"/>I'm Web Developer
+    <h3><b>Build Web With Me</b></h3>
+  </nav>
+  
+  <main>
+    <h2><b>About</b></h2>
+    <p><img src="latihan1/picture.jpg" style="float: left; margin:0 50px 40px 0;" width="200" height="150"/>  
+    
+    it'is a long established fact that e reader will be distracted by the readable conten of a page 
+    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution  of letters, as opposed to using 'Content here,  content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search form "lorem ipsum" will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,  sometimes on purpose 
+    (injected humour and the like).</p>
+  </main>
+
+  <aside>
+    <h2><b>Portfolio</h2></b>
+    <div class="gallery">
+  <a target="_blank" href="latihan/picture.jpg">
+    <img src="latihan1/picture.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Portfolio 1</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="latihan1/picture.jpg">
+    <img src="latihan1/picture.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Portfolio 2</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="latihan1/picture.jpg">
+    <img src="latihan1/picture.jpg" width="600" height="400">
+  </a>
+  <div class="desc">Portfolio 3</div>
+</div>
+  </aside>
+
+  <article>
+    <h1>Contact</h1>
+    <form action="/action_page.php">
+    <label>Name</label><br>
+    <input type="text" name="name" value="Name"><br><br>
+    <label>Email</label><br>
+    <input type="text" name="name" value="Email"><br><br>
+    <label>Message</label><br>
+    <textarea name="Message"></textarea><br>
+    <input type="submit" value="Submit">
+</form> 
+
+  </article>
+</section>
+
+<footer>
+  <p><i>Copyright 2022</p></i>
+</footer>
+
+</body>
+</html>
