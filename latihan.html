@@ -43,6 +43,8 @@ header {
   border: #000 1px solid;
   background-color: #fff;
   padding: 5px;
+  margin-left: : 15px;
+  float: left;
   text-align: auto;
   width: 90%;
   color: black;
@@ -50,6 +52,7 @@ header {
 header ul li{
   display: inline-block;
   margin-right: 15px;
+  float: right;
 }
 
 nav {
@@ -116,7 +119,9 @@ footer {
 </style>
 </head>
 <body>
-
+ <script>
+document.write(Date());
+</script>
 <header>
   <h2>Jhon Doe</h2>
   <ul>
@@ -125,6 +130,7 @@ footer {
       <li><a href="#">Portfolio</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
+
 </header>
 
 <section>
@@ -168,15 +174,24 @@ footer {
 
   <article>
     <h1>Contact</h1>
-    <form action="/action_page.php">
-    <label>Name</label><br>
-    <input type="text" name="name" value="Name"><br><br>
-    <label>Email</label><br>
-    <input type="text" name="name" value="Email"><br><br>
-    <label>Message</label><br>
-    <textarea name="Message"></textarea><br>
-    <input type="submit" value="Submit">
-</form> 
+    <label for="fname">Name:</label>
+      <input type="text" id="name">
+      <label for="fname">Email:</label>
+      <input type="text" id="email">
+      <label for="fname">message:</label>
+      <input type="text" id="message">
+        <button onclick="tampilkan()">Submit</button>
+      <p id="demo"></p>
+      <script>
+function tampilkan() {
+  var name = document.getElementById("name").value;
+  document.getElementById("demo").innerHTML = name;
+  var email = document.getElementById("email").value;
+  document.getElementById("demo").innerHTML = email;
+  var message = document.getElementById("message").value;
+  document.getElementById("demo").innerHTML = message;
+}
+</script>
 
   </article>
 </section>
