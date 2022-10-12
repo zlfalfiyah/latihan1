@@ -174,29 +174,62 @@ document.write(Date());
 
   <article>
     <h1>Contact</h1>
-    <label for="fname">Name:</label>
+    <label for="name">Name:</label>
       <input type="text" id="name">
-      <label for="fname">Email:</label>
+      <label for="email">Email:</label>
       <input type="text" id="email">
-      <label for="fname">message:</label>
+      <label for="message">Message:</label>
       <input type="text" id="message">
         <button onclick="tampilkan()">Submit</button>
-      <p id="demo"></p>
-      <script>
-function tampilkan() {
-  var name = document.getElementById("name").value;
-  document.getElementById("demo").innerHTML = name;
-  var email = document.getElementById("email").value;
-  document.getElementById("demo").innerHTML = email;
-  var message = document.getElementById("message").value;
-  document.getElementById("demo").innerHTML = message;
-}
-</script>
+      <div id="demo"></div>
+      
 
   </article>
 </section>
 
 <footer>
+  <script>
+    let daftartamu = [];
+
+function tampilkan() {
+  var demo =document.getElementById("demo");
+
+  var name = document.getElementById("name").value;
+  listname ={name: name}
+  daftartamu.push(listname)
+  demo.innerHTML = name;
+  demo.innerHTML += '<br/>';
+  var email = document.getElementById("email").value;
+  listname ={email: email}
+  daftartamu.push(listname)
+  demo.innerHTML += email;
+  demo.innerHTML += '<br/>';
+  var message = document.getElementById("message").value;
+  listname ={message: message}
+  daftartamu.push(listname)
+  demo.innerHTML = 'Daftar Tamu';
+  demo.innerHTML += '<br/>';
+  demo.innerHTML += '<br/>';
+
+  console.log(daftartamu)
+
+  daftartamu.forEach(function(key){
+    console.log(name);
+    demo.innerHTML += key.name
+    demo.innerHTML += '<br/>'
+  })
+  daftartamu.forEach(function(key){
+    console.log(email);
+    demo.innerHTML +=key.email
+    demo.innerHTML += '<br/>'
+  })
+  daftartamu.forEach(function(key){
+    console.log(message);
+    demo.innerHTML +=key.message;
+    demo.innerHTML += '<br/>'
+  })
+}
+</script>
   <p><i>Copyright 2022</p></i>
 </footer>
 
