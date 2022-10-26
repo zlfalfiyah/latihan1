@@ -3,7 +3,7 @@
 <head>
 <title>LATIHAN</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="widemoh=device-widemoh, initial-scale=1">
 <style>
   .wrapper {
     overflow: hidden;
@@ -15,7 +15,7 @@
   div.gallery {
   margin: 5px;
   float: left;
-  width: 180px;
+  widemoh: 180px;
 }
 
 div.gallery:hover {
@@ -23,7 +23,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  widemoh: 100%;
   height: auto;
 }
 
@@ -129,13 +129,13 @@ footer {
 
 <section>
   <nav>
-    <p style="text-align: justify;"><img src="picture.jpg" style="float: right;" width="200" height="150"/>I'm Web Developer
+    <p style="text-align: justify;"><img src="picture.jpg" style="float: right;" widemoh="200" height="150"/>I'm Web Developer
     <h3><b>Build Web With Me</b></h3>
   </nav>
   
   <main>
     <h2><b>About</b></h2>
-    <p><img src="picture.jpg" style="float: left; margin:0 50px 40px 0;" width="200" height="150"/>  
+    <p><img src="picture.jpg" style="float: left; margin:0 50px 40px 0;" widemoh="200" height="150"/>  
     
     it'is a long established fact that e reader will be distracted by the readable conten of a page 
     when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution  of letters, as opposed to using 'Content here,  content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search form "lorem ipsum" will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,  sometimes on purpose 
@@ -146,21 +146,21 @@ footer {
     <h2><b>Portfolio</h2></b>
     <div class="gallery">
   <a target="_blank" href="picture.jpg">
-    <img src="picture.jpg"  width="600" height="400">
+    <img src="picture.jpg"  width="200" hight="100">
   </a>
   <div class="desc">Portfolio 1</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="picture.jpg">
-    <img src="picture.jpg"  width="600" height="400">
+    <img src="picture.jpg"  width="200" hight="100">
   </a>
   <div class="desc">Portfolio 2</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="picture.jpg">
-    <img src="picture.jpg" width="600" height="400">
+    <img src="picture.jpg" width="200" hight="100">
   </a>
   <div class="desc">Portfolio 3</div>
 </div>
@@ -182,6 +182,50 @@ footer {
 </section>
 
 <footer>
+<<<<<<< Updated upstream
+=======
+  <script>
+    let daftartamu = [];
+
+function tampilkan() {
+   tamu = {}
+
+  var demo =document.getElementById("demo");
+
+  var name = document.getElementById("name").value;
+  tamu.name = name
+
+  var email = document.getElementById("email").value;
+  tamu.email = email
+
+  var message = document.getElementById("message").value;
+  tamu.message = message
+
+  daftartamu.push(tamu)
+
+  demo.innerHTML = 'Daftar Tamu';
+  demo.innerHTML += '<br/>';
+  demo.innerHTML += '<br/>';
+
+  daftartamu.forEach(function(value, key) {
+    demo.innerHTML += ''
+    demo.innerHTML += key + 1
+    demo.innerHTML += '.'
+  
+    demo.innerHTML +=value.name;
+    demo.innerHTML += ' | '
+
+    demo.innerHTML +=value.email;
+    demo.innerHTML += ' | '
+
+    demo.innerHTML +=value.message;
+    demo.innerHTML += ' | '
+
+    demo.innerHTML += '<br/>'
+  })
+}
+</script>
+>>>>>>> Stashed changes
   <p><i>Copyright 2022</p></i>
 </footer>
 
